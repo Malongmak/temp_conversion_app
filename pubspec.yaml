@@ -1,0 +1,22 @@
+name: temp_conversion_app
+description: A new Flutter project for temperature conversion with login and signup functionality.
+
+publish_to: 'none' # Remove this line if you want to publish to pub.dev.
+
+environment:
+  sdk: '^3.4.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.10.0
+  firebase_auth: ^4.6.0
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
