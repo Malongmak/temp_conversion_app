@@ -21,10 +21,137 @@ A simple Flutter application for converting temperatures between Fahrenheit and 
    ```bash
    flutter pub get
    ```
-4. Configure Firebase:
-   - Set up Firebase project in the Firebase console.
-   - Add `google-services.json` for Android or `GoogleService-Info.plist` for iOS to the appropriate location in your project.
-   - Enable Email/Password authentication method in Firebase Authentication.
+4. Input Temperature:
+The user provides a temperature value in a specific unit (e.g., Celsius, Fahrenheit, or Kelvin).
+Selection of Conversion Type:
+
+The user selects the desired conversion type (e.g., Celsius to Fahrenheit, Fahrenheit to Kelvin, etc.).
+Application of Conversion Formula:
+
+Based on the selected conversion type, the temperature converter applies the appropriate mathematical formula to perform the conversion. Here are the common formulas used:
+Celsius to Fahrenheit: 
+𝐹
+=
+(
+𝐶
+×
+9
+5
+)
++
+32
+F=(C× 
+5
+9
+​
+ )+32
+Fahrenheit to Celsius: 
+𝐶
+=
+(
+𝐹
+−
+32
+)
+×
+5
+9
+C=(F−32)× 
+9
+5
+​
+ 
+Celsius to Kelvin: 
+𝐾
+=
+𝐶
++
+273.15
+K=C+273.15
+Kelvin to Celsius: 
+𝐶
+=
+𝐾
+−
+273.15
+C=K−273.15
+Fahrenheit to Kelvin: 
+𝐾
+=
+(
+𝐹
+−
+32
+)
+×
+5
+9
++
+273.15
+K=(F−32)× 
+9
+5
+​
+ +273.15
+Kelvin to Fahrenheit: 
+𝐹
+=
+(
+𝐾
+−
+273.15
+)
+×
+9
+5
++
+32
+F=(K−273.15)× 
+5
+9
+​
+ +32
+Output Temperature:
+
+The converted temperature is displayed in the chosen unit.
+Example:
+Convert 25°C to Fahrenheit:
+
+Input Temperature: 25°C
+Selection of Conversion Type: Celsius to Fahrenheit
+Application of Conversion Formula:
+𝐹
+=
+(
+25
+×
+9
+5
+)
++
+32
+F=(25× 
+5
+9
+​
+ )+32
+𝐹
+=
+45
++
+32
+F=45+32
+𝐹
+=
+77
+F=77
+Output Temperature: 77°F
+This process can be implemented in various forms, including:
+
+Manual Calculation: Using the formulas to calculate the conversion by hand.
+Digital Tools: Using calculators, mobile apps, or online converters to perform the conversion automatically.
+Embedded Systems: Temperature sensors and devices with built-in conversion algorithms to provide real-time temperature readings in different units
+  
 
 5. Run the app:
    ```bash
